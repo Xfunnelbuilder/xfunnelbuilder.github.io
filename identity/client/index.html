@@ -26,8 +26,7 @@
 
         // Set your publishable key: remember to change this to your live publishable key in production
         // Find your keys here: https://dashboard.stripe.com/apikeys
-       const {publishableKey} = await fetch('/config').then(r=>r.json());
-       const stripe = Stripe(publishableKey);
+        const stripe = Stripe('pk_live_51HcdwAFh7HKvLs986YqkPbF7Z5Cq2QvNECqnOaSrktLY28zYvyTFR5djlG02rAwCu2F1znlHkAQsKgCSb6lpam8H00xq11OvGs');
         
         var verifyButton = document.getElementById('verify-button');
         verifyButton.addEventListener('click', async () => {
